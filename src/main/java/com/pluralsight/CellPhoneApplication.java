@@ -9,7 +9,7 @@ public class CellPhoneApplication {
 
         CellPhone phone = new CellPhone();
         CellPhone phone2 = new CellPhone(
-                99999999,
+                9999999,
                 "IPhone 15",
                 "Verizon",
                 "888-555-4545",
@@ -41,13 +41,9 @@ public class CellPhoneApplication {
         System.out.println("------Phone Information------");
         display(phone);
         System.out.println("------Second Phone Information------");
-        display2(phone2);
+        display(phone2);
         phone.dial(phone2.getPhoneNumber());
         phone2.dial(phone.getPhoneNumber());
-
-
-
-
 
     }
     public static void display(CellPhone phone) {
@@ -57,18 +53,6 @@ public class CellPhoneApplication {
         System.out.println("4. The phone number is: " + phone.getPhoneNumber());
         System.out.println("5. The owner is: " + phone.getOwner());
     }
-    public static void display2(CellPhone phone2) {
-        System.out.println("1. The serial number is: " + phone2.getSerialNumber());
-        System.out.println("2. The model of the phone is: " + phone2.getPhoneModel());
-        System.out.println("3. The carrier of the phone is: " + phone2.getCarrier());
-        System.out.println("4. The phone number is: " + phone2.getPhoneNumber());
-        System.out.println("5. The owner is: " + phone2.getOwner());
-    }
-
-
-
-
-
 
 
 }
