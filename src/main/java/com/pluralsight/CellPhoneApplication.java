@@ -42,8 +42,8 @@ public class CellPhoneApplication {
         display(phone);
         System.out.println("------Second Phone Information------");
         display(phone2);
-        phone.dial(phone2.getPhoneNumber());
-        phone2.dial(phone.getPhoneNumber());
+        phone.dial(phone2);
+        phone2.dial(phone);
 
     }
     public static void display(CellPhone phone) {
