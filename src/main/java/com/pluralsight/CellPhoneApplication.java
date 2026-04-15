@@ -43,6 +43,7 @@ public class CellPhoneApplication {
 
         System.out.println("------Phone Information------");
         display(phone);
+        System.out.println("------Second Phone Information------");
         display2(phone2);
         phone.dial(phone2.getPhoneNumber());
         phone2.dial(phone.getPhoneNumber());
