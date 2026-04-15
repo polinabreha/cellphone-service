@@ -8,9 +8,12 @@ public class CellPhoneApplication {
 
 
         CellPhone phone = new CellPhone();
-        CellPhone phone2 = new CellPhone();
-
-
+        CellPhone phone2 = new CellPhone(
+                99999999,
+                "IPhone 15",
+                "Verizon",
+                "888-555-4545",
+                "Mike");
 
         System.out.print("What is the serial number? ");
         int serialNumber = scanner.nextInt();
@@ -33,12 +36,6 @@ public class CellPhoneApplication {
         phone.setCarrier(carrier);
         phone.setPhoneNumber(phoneNumber);
         phone.setOwner(owner);
-
-        phone2.setSerialNumber(99999999);
-        phone2.setPhoneModel("IPhone 15");
-        phone2.setCarrier("Verizon");
-        phone2.setPhoneNumber("888-555-4545");
-        phone2.setOwner("Mike");
 
 
         System.out.println("------Phone Information------");

@@ -12,6 +12,15 @@ public class CellPhone {
         this.owner = "";
     }
 
+    public CellPhone(int serialNumber, String phoneModel
+            , String carrier, String phoneNumber, String owner) {
+        this.serialNumber = serialNumber;
+        this.phoneModel = phoneModel;
+        this.carrier = carrier;
+        this.phoneNumber = phoneNumber;
+        this.owner = owner;
+    }
+
     public int getSerialNumber(){
 
         return serialNumber;
