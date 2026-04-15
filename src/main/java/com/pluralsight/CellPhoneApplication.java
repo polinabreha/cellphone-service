@@ -8,6 +8,8 @@ public class CellPhoneApplication {
 
 
         CellPhone phone = new CellPhone();
+        CellPhone phone2 = new CellPhone();
+
 
 
         System.out.print("What is the serial number? ");
@@ -32,22 +34,43 @@ public class CellPhoneApplication {
         phone.setPhoneNumber(phoneNumber);
         phone.setOwner(owner);
 
+        phone2.setSerialNumber(99999999);
+        phone2.setPhoneModel("IPhone 15");
+        phone2.setCarrier("Verizon");
+        phone2.setPhoneNumber("888-555-4545");
+        phone2.setOwner("Mike");
+
 
         System.out.println("------Phone Information------");
-        System.out.println("1. The serial number is: " + phone.getSerialNumber());
-        System.out.println("2. The model of the phone is: " + phone.getPhoneModel());
-        System.out.println("3. The carrier of the phone is: " + phone.getCarrier());
-        System.out.println("4. The phone number is: " + phone.getPhoneNumber());
-        System.out.println("5. The owner is: " + phone.getOwner());
-
-
-
-
-
+        display(phone);
+        display2(phone2);
+        phone.dial(phone2.getPhoneNumber());
+        phone2.dial(phone.getPhoneNumber());
 
 
 
 
 
     }
+    public static void display(CellPhone phone) {
+        System.out.println("1. The serial number is: " + phone.getSerialNumber());
+        System.out.println("2. The model of the phone is: " + phone.getPhoneModel());
+        System.out.println("3. The carrier of the phone is: " + phone.getCarrier());
+        System.out.println("4. The phone number is: " + phone.getPhoneNumber());
+        System.out.println("5. The owner is: " + phone.getOwner());
+    }
+    public static void display2(CellPhone phone2) {
+        System.out.println("1. The serial number is: " + phone2.getSerialNumber());
+        System.out.println("2. The model of the phone is: " + phone2.getPhoneModel());
+        System.out.println("3. The carrier of the phone is: " + phone2.getCarrier());
+        System.out.println("4. The phone number is: " + phone2.getPhoneNumber());
+        System.out.println("5. The owner is: " + phone2.getOwner());
+    }
+
+
+
+
+
+
+
 }
